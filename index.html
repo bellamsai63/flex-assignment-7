@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGN-7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .parent{
+            height: 90vh;
+            width: 90vw;
+            border: 2px solid;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-image: url("background\ for\ 7.jpg");
+        }
+        .Annual{
+            display: flex;
+            position: relative;
+            width: 20%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .box{
+            height: 30px;
+            width: 50px;
+            border: 1px solid;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(8, 95, 194, 0.702);
+            color: rgba(8, 95, 194, 0);
+        }
+        .box_circle{
+            height: 27px;
+            width: 28px;
+            border: 1px solid;
+            border-radius: 50%;
+            text-align: center;
+            background-color: white;
+            margin-top: -29px;
+            margin-left: 20px;
+            color: white;
+        }
+        .div3{
+            height: 60%;
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+        .card{
+            height: 100%;
+            width: 33.333%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px 2px rgba(8, 95, 194, 0.702);
+        }
+        .card2{
+            height: 110%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: rgba(8, 95, 194, 0.702);
+            color: rgba(8, 95, 194, 0.702);
+            border-radius: 10px;
+        }
+        .s1{
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgb(0, 100, 176);
+            text-shadow: 1px 2px 3px;
+        }
+        span{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .s2{
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        .s3, .s4, .s5{
+            font-weight: bold;
+            color: #353535c7;
+            padding: 5px;
+            padding: 10px 0px;
+        }
+        .s3{
+            border-top: 2px solid;
+        }.s4{
+            border-top: 2px solid;
+        }.s5{
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+        }
+        .storage{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .button_style{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            height: 40px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 100, 176);
+            border-style: none;
+            border-radius: 5px;
+            color: aliceblue;
+            font-weight: 600;
+            word-spacing: 10px;
+            font-size: 1.2rem;
+            font-variant: small-caps;
+        }
+        .btn{
+            background-color: azure;
+            color:rgb(0, 100, 176) ;
+        }
+        .s11, .s22, .s33, .s44, .s55{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>
+            <h1>Our Pricing</h1>
+        </div>
+        <div class="Annual">
+            <h3>Annually</h3>
+            <div class="toggle">
+                <h1 class="box">.</h1>
+                <h2 class="box_circle">.</h2>
+            </div>
+            <h3>Montly</h3>
+        </div>
+        <div class="div3">
+            <div class="card card1">
+                <p class="s1">Basic</p>
+                <p class="s2"><span><sup>$</sup></span>19.99</p>
+                <div class="storage">
+                    <p class="s3">500 GB Storage</p>
+                    <p class="s4">2 Users Allowed</p>
+                    <p class="s5">Send up to 3 GB</p>
+                </div>
+                <div class="button_style">
+                    <button>learn more</button>
+                </div>
+            </div>
+            <div class="card card2">
+                <p class="s1 s11">Professional</p>
+                <p class="s2 s22"><span><sup>$</sup></span>24.99</p>
+                <div class="storage">
+                    <p class="s3 s33">1 TB Storage</p>
+                    <p class="s4 s44">5 Users Allowed</p>
+                    <p class="s5 s55">Send up to 10 GB</p></div>
+                <div class="button_style">
+                    <button class="btn">learn more</button>
+                </div>
+            </div>
+            <div class="card card3">
+                <p class="s1">Master</p>
+                <p class="s2"><span><sup>$</sup></span>39.99</p>
+                <div class="storage">
+                    <p class="s3">2 TB Storage</p>
+                    <p class="s4">10 Users Allowed</p>
+                    <p class="s5">Send up to 20 GB</p>
+                </div>
+                <div class="button_style">
+                    <button>learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
